@@ -1,13 +1,20 @@
-var names = ["shuchi","yakko","computer","joey"];
+(function () {
+	
+var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
-var temp = function (names) {
-	for (var i = 0; i < names.length; i++) {
-	
-	if(names[i].startsWith('j')) {
-		console.log ("Hello " +  names[i]) ;	
-	}	else{
-	
-	    console.log("goodbye " + names[i]) ;
-	}
-  } 
+for (var i = 0; i < names.length; i++) {
+
+	var firstLetter = names[i].charAt(0).toLowerCase();
+
+		if (firstLetter === 'j') {
+
+			byeSpeaker.sayGoodBye(names[i]);
+
+		} else {
+
+			helloSpeaker.sayHello(names[i]);
+		}
+
 }
+
+})();
